@@ -11,6 +11,7 @@ function App() {
         <StarField />
       </div>
       <Nav />
+     
       {/* Other components can go here */}
     </div>
   );

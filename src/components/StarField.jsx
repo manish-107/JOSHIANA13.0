@@ -60,7 +60,7 @@ const StarsCanvas = () => (
       zIndex: -1, // Ensure it's in the background
     }}
   >
-    <Canvas camera={{ position: [0, 0, 1] }}>
+    <Canvas  camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
         <StarBackground />
       </Suspense>
