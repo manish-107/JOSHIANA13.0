@@ -1,22 +1,9 @@
-import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { Box, Button } from '@mui/material';
+import React from "react";
 
 const Nav = () => {
   return (
-    <Box sx={{margin:"30px"}} >
-      <AppBar position="static" sx={{ backgroundColor: "#2b313660", boxShadow: "none",padding:"10px", borderRadius: "30px" }}>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit" sx={{backgroundColor:"gray"}}>Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <h1 className="text-3xl font-bold underline  text-white">Hello world!</h1>
   );
-}
+};
 
 export default Nav;
