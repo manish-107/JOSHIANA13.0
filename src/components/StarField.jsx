@@ -49,18 +49,19 @@ const StarBackground = (props) => {
 
 const StarsCanvas = () => (
   <div
+    className="pl-40 p-10 w-fit"
     style={{
       width: "100vw",
       height: "100vh",
       position: "fixed",
       top: 0,
       right: 0,
-      bottom: 0,
+      bottom: "100p",
       left: 0,
       zIndex: -1, // Ensure it's in the background
     }}
   >
-    <Canvas  camera={{ position: [0, 0, 1] }}>
+    <Canvas camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
         <StarBackground />
       </Suspense>
