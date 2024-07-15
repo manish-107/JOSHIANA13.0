@@ -49,7 +49,7 @@ const StarBackground = (props) => {
 
 const StarsCanvas = () => (
   <div
-    className="pl-40 p-10 w-fit"
+    className="p-10 w-fit"
     style={{
       width: "100vw",
       height: "100vh",

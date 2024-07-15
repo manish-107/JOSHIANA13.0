@@ -16,3 +16,14 @@ body, html, #root {
     left: 0;
     z-index: -1;
     }
+
+/* In your global CSS file or a specific CSS module */
+.anime-container {
+  position: relative;
+}
+
+.anime-container .dot {
+  position: absolute;
+  border-radius: 50%;
+  background-color: hsl(60, 100%, 80%);
+}
