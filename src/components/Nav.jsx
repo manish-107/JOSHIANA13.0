@@ -26,8 +26,10 @@ const Nav = () => {
 
       {/* Navigation Menu */}
       <div
-        className={`fixed top-0 left-0 ml-3 p-6 mt-3 h-auto rounded-lg mb-3 w-auto bg-black border-2 border-slate-800 text-gray-200  transform transition-transform duration-300 ${
-          menuOpen ? "translate-x-0" : "-translate-x-full border-0 md:border-2 "
+        className={`fixed top-0 left-0 ml-3 p-6 mt-3 h-auto rounded-lg mb-3 w-auto bg-black  border-slate-800 text-gray-200  transform transition-transform duration-300 ${
+          menuOpen
+            ? "translate-x-0 border-2"
+            : "-translate-x-full border-0 md:border-2"
         } sm:translate-x-0`}
       >
         {/* Close Button */}
