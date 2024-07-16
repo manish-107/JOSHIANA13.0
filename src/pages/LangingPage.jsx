@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import StarField from "../components/StarField.jsx";
 import Nav from "../components/Nav.jsx";
+import HeroSec from "../components/HeroSec.jsx";
 
 function LandingPage() {
   return (
@@ -25,6 +26,9 @@ function LandingPage() {
       </div>
 
       <Nav />
+      <div>
+        <HeroSec />
+      </div>
     </div>
   );
 }
