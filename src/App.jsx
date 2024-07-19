@@ -8,6 +8,7 @@ import About from "./pages/About";
 import EventSchedule from "./pages/EventSchedule";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/eventschedule" element={<EventSchedule />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>
