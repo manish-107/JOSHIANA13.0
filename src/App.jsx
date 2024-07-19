@@ -9,6 +9,7 @@ import EventSchedule from "./pages/EventSchedule";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </BrowserRouter>
     </div>
