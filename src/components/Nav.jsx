@@ -27,7 +27,7 @@ const Nav = () => {
   return (
     <div>
       {/* Top Navigation Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50  mt-5 p-4 shadow-lg">
+      <div className="fixed top-0 left-0 right-0 z-50  mt-5 p-4 ">
         <button
           onClick={toggleMenu}
           className="sm:hidden bg-gray-900 text-gray-200 p-2 rounded"

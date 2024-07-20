@@ -10,7 +10,7 @@ const LabelInputContainer = ({ children, className }) => (
 
 const SignIn = () => {
   return (
-    <div className="bg-black min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-gradient-to-b from-[#4b2954] via-black to-black min-h-screen flex flex-col items-center justify-center">
       <Nav />
       <div className="max-w-md w-full rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-black mt-20 md:mt-32">
         <h2 className="font-bold text-xl text-neutral-200">

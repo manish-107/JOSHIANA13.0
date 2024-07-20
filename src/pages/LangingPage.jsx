@@ -8,7 +8,7 @@ import GoogleGeminiEffectDemo from "../components/GoogleGeminiEffectDemo.jsx";
 function LandingPage() {
   return (
     <div>
-      <div className="starfield-container bg-[#030014]">
+      <div className="starfield-container bg-gradient-to-b from-[#292a54] via-black to-black">
         {/* <Rocker /> */}
         <div
           className="relative flex justify-center flex-row h-full w-full"
@@ -23,7 +23,6 @@ function LandingPage() {
         <GoogleGeminiEffectDemo />
       </div>
       <Nav />
-      <HeroSec />
       <HeroSec />
     </div>
   );
