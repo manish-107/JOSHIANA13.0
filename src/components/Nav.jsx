@@ -27,7 +27,7 @@ const Nav = () => {
   return (
     <div>
       {/* Top Navigation Bar */}
-      <div className="fixed top-0 left-0 right-0  mt-5 p-4 shadow-lg">
+      <div className="fixed top-0 left-0 right-0 z-50  mt-5 p-4 shadow-lg">
         <button
           onClick={toggleMenu}
           className="sm:hidden bg-gray-900 text-gray-200 p-2 rounded"
@@ -36,14 +36,14 @@ const Nav = () => {
         </button>
         <div className="flex justify-center items-center">
           <div className="hidden sm:flex ">
-            <div className="border-2 w-fit pl-6 pr-6 p-3 rounded-2xl border-neutral-700 bg-neutral-800 bg-opacity-50 text-sm text-neutral-300">
+            <div className="border-2 w-fit pl-6 pr-6 p-3 rounded-2xl border-neutral-700 bg-neutral-900 bg-opacity-95 text-sm text-neutral-100">
               <div className="flex justify-center w-full sm:w-auto space-x-11 ">
                 <Link to="/" className="block overflow-hidden">
                   <div
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
                   >
-                    <IconHome className="h-6 w-6 text-neutral-500 dark:text-white" />
+                    <IconHome className="h-6 w-6 text-white" />
                     <span className="flex h-[20px] items-center text-neutral-100">
                       Home
                     </span>
@@ -54,7 +54,7 @@ const Nav = () => {
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
                   >
-                    <IconInfoCircle className="h-6 w-6 text-neutral-500 dark:text-white" />
+                    <IconInfoCircle className="h-6 w-6 text-white" />
                     <span className="flex h-[20px] items-center text-neutral-100">
                       About
                     </span>
@@ -66,7 +66,7 @@ const Nav = () => {
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
                   >
-                    <IconCalendarEvent className="h-6 w-6 text-neutral-500 dark:text-white" />
+                    <IconCalendarEvent className="h-6 w-6 text-white" />
                     <span className="flex h-[20px] items-center text-neutral-100">
                       Events
                     </span>
@@ -77,7 +77,7 @@ const Nav = () => {
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
                   >
-                    <IconFileText className="h-6 w-6 text-neutral-500 dark:text-white" />
+                    <IconFileText className="h-6 w-6 text-white" />
                     <span className="flex h-[20px] items-center text-neutral-100">
                       Brochure
                     </span>
@@ -89,7 +89,7 @@ const Nav = () => {
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
                   >
-                    <IconUsers className="h-6 w-6 text-neutral-500 dark:text-white" />
+                    <IconUsers className="h-6 w-6 text-white" />
                     <span className="flex h-[20px] items-center text-neutral-100">
                       Team
                     </span>
@@ -101,7 +101,7 @@ const Nav = () => {
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
                   >
-                    <IconMessage className="h-6 w-6 text-neutral-500 dark:text-white" />
+                    <IconMessage className="h-6 w-6 text-white" />
                     <span className="flex h-[20px] items-center text-neutral-100">
                       Contact
                     </span>
@@ -139,7 +139,7 @@ const Nav = () => {
           <div
             className={`fixed top-0 left-0 bg-black border-2 border-slate-800 text-gray-200 mt-5 rounded-lg p-6 transform transition-transform duration-300 ease-in-out ${
               menuOpen ? "translate-x-0 ml-3" : "-translate-x-full"
-            } sm:hidden z-20`}
+            } sm:hidden z-99`}
           >
             <div className="flex justify-end">
               <button onClick={closeMenu} className="text-gray-200 p-2 rounded">

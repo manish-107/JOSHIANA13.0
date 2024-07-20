@@ -3,24 +3,41 @@ import { motion } from "framer-motion";
 
 const HeroSec = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-56">
-      <motion.h2
-        className="text-slate-300 mb-5 mx-0 max-w-[43.5rem] pt-5 text-left tracking-tighter md:text-center md:font-semibold md:text-7xl sm:text-6xl text-5xl font-extralight"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        JOSHIANA 13.0
-      </motion.h2>
-      <motion.p
-        className="max-w-xl text-center text-base tracking-tight font-extrabold bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text md:text-lg text-transparent"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-      >
-        50+ free and open-source animated components built with <b>React</b>,{" "}
-        <b>Typescript</b>, <b>Tailwind CSS</b>
-      </motion.p>
+    <div className="flex flex-col justify-center z-1 text-gray-200 rounded-lg p-6 transform transition-transform duration-300 ease-in-out bg-slate-900 bg-clip-padding  backdrop-blur-sm bg-opacity-10 border border-gray-700 items-center m-2 mt-10">
+      <div>
+        The useSearchParams hook is used to read and modify the query string in
+        the URL for the current location. Like React's own useState hook,
+        useSearchParams returns an array of two values: the current location's
+        search params and a function that may be used to update them. Just as
+        React's useState hook, setSearchParams also supports functional updates.
+        Therefore, you may provide a function that takes a searchParams and
+        returns an updated version.The useSearchParams hook is used to read and
+        modify the query string in the URL for the current location. Like
+        React's own useState hook, useSearchParams returns an array of two
+        values: the current location's search params and a function that may be
+        used to update them. Just as React's useState hook, setSearchParams also
+        supports functional updates. Therefore, you may provide a function that
+        takes a searchParams and returns an updated version.The useSearchParams
+        hook is used to read and modify the query string in the URL for the
+        current location. Like React's own useState hook, useSearchParams
+        returns an array of two values: the current location's search params and
+        a function that may be used to update them. Just as React's useState
+        hook, setSearchParams also supports functional updates. Therefore, you
+        may provide a function that takes a searchParams and returns an updated
+        version. The useSearchParams hook is used to read and modify the query
+        string in the URL for the current location. Like React's own useState
+        hook, useSearchParams returns an array of two values: the current
+        location's search params and a function that may be used to update them.
+        Just as React's useState hook, setSearchParams also supports functional
+        updates. Therefore, you may provide a function that takes a searchParams
+        and returns an updated version. The useSearchParams hook is used to read
+        and modify the query string in the URL for the current location. Like
+        React's own useState hook, useSearchParams returns an array of two
+        values: the current location's search params and a function that may be
+        used to update them. Just as React's useState hook, setSearchParams also
+        supports functional updates. Therefore, you may provide a function that
+        takes a searchParams and returns an updated version.
+      </div>
     </div>
   );
 };

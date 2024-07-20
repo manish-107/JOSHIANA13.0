@@ -3,7 +3,7 @@ import "../App.css";
 import StarField from "../components/StarField.jsx";
 import Nav from "../components/Nav.jsx";
 import HeroSec from "../components/HeroSec.jsx";
-import Rocker from "../components/Rocker.jsx";
+import GoogleGeminiEffectDemo from "../components/GoogleGeminiEffectDemo.jsx";
 
 function LandingPage() {
   return (
@@ -19,11 +19,12 @@ function LandingPage() {
         </div>
       </div>
 
-      <Nav />
-
       <div>
-        <HeroSec />
+        <GoogleGeminiEffectDemo />
       </div>
+      <Nav />
+      <HeroSec />
+      <HeroSec />
     </div>
   );
 }
