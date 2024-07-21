@@ -61,7 +61,7 @@ const Nav = () => {
                   </div>
                 </Link>
 
-                <Link to="/event" className="block overflow-hidden">
+                <Link to="/events" className="block overflow-hidden">
                   <div
                     className="h-[40px] flex flex-col items-center"
                     style={{ transform: "none" }}
