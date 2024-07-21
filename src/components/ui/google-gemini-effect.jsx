@@ -18,7 +18,7 @@ const GoogleGeminiEffect = ({ pathLengths, title, description, className }) => {
       </p>
       <p
         style={{ fontFamily: "Abril Fatface" }}
-        className="text-xl md:text-xl font-normal text-center text-[#e4e4de] mt-4 max-w-lg mx-auto"
+        className="text-xl md:text-xl font-normal text-center text-[#e4e4de] mt-4 p-3 max-w-lg mx-auto"
       >
         {description ||
           `Joshiana 13.0 is a National level IT fest organized by the Department of Computer Applications in association with TECHNOCRATS`}

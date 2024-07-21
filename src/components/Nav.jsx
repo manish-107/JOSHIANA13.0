@@ -95,6 +95,16 @@ const Nav = () => {
                     </span>
                   </div>
                 </Link>
+                <Link to="/eventschedule" className="block overflow-hidden">
+                  <div
+                    className="h-[40px] flex flex-col items-center"
+                    style={{ transform: "none" }}
+                  >
+                    <IconClock className="h-6 w-6 text-white" />
+
+                    <span className="text-xs text-neutral-100">Schedule</span>
+                  </div>
+                </Link>
 
                 <Link to="/contact" className="block overflow-hidden">
                   <div
