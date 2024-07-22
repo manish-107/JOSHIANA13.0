@@ -26,22 +26,22 @@ function App() {
 
   return (
     <div>
-      {/* {loading ? (
+      {loading ? (
         <Loader /> // Show loader while loading is true
-      ) : ( */}
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LangingPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/eventschedule" element={<EventSchedule />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/signin" element={<SignIn />} />
-        </Routes>
-      </BrowserRouter>
-      {/* )} */}
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LangingPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/eventschedule" element={<EventSchedule />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/signin" element={<SignIn />} />
+          </Routes>
+        </BrowserRouter>
+      )}
     </div>
   );
 }
