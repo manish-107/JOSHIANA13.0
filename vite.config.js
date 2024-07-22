@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  server: {
-    host: "0.0.0.0",
-    port: 5173, // or your preferred port
+  base: "JOSHIANA13.0",
+  build: {
+    outDir: "dist",
   },
 });
