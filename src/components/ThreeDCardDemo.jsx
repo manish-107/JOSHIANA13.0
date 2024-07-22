@@ -14,7 +14,7 @@ export function ThreeDCardDemo({
 }) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="relative group/card bg-black dark:border-gray-700 border-gray-700 w-auto sm:w-[25rem] h-auto rounded-xl p-4 border">
+      <CardBody className="relative group/card bg-black dark:border-gray-700 border-gray-700  min-w-[25rem] w-full max-w-[25rem] h-auto rounded-xl p-4 border">
         <CardItem translateZ={50} className="text-xl font-bold text-white">
           {category}
         </CardItem>

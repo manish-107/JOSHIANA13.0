@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav.jsx";
+import Footer from "../components/Footer.jsx";
 
 const EventSchedule = () => {
   return (
@@ -14,6 +15,7 @@ const EventSchedule = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

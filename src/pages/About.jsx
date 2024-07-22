@@ -2,18 +2,19 @@ import React from "react";
 import Nav from "../components/Nav.jsx";
 import Card from "../components/Card";
 import posterimg from "../assets/posterimg.jpg";
+import Footer from "../components/Footer.jsx";
 
-const rocketImg = "https://via.placeholder.com/300x200.png?text=Rocket";
-const robotImg = "https://via.placeholder.com/300x200.png?text=Robot";
-const alienImg = "https://via.placeholder.com/300x200.png?text=Alien";
-const spaceImg = "https://via.placeholder.com/300x200.png?text=Space";
+import quizid from "../assets/quizid-min.jpg";
+import treamenent from "../assets/reamenent-min.jpg";
+import supriseevent from "../assets/supriseevent-min.jpg";
+import TreasureHunt from "../assets/TreasureHunt-min.jpg";
 
 const About = () => {
   const highlights = [
-    { emoji: "🚀", image: rocketImg },
-    { emoji: "🤖", image: robotImg },
-    { emoji: "👽", image: alienImg },
-    { emoji: "🌌", image: spaceImg },
+    { emoji: "🚀", image: quizid },
+    { emoji: "🤖", image: treamenent },
+    { emoji: "👽", image: supriseevent },
+    { emoji: "🌌", image: TreasureHunt },
   ];
 
   return (
@@ -52,6 +53,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "../components/Nav.jsx";
-import GoogleGeminiEffectDemo from "../components/GoogleGeminiEffectDemo.jsx";
+import Footer from "../components/Footer.jsx";
 
 const Contact = () => {
   // State to manage the loading state of the map
@@ -149,6 +149,7 @@ const Contact = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

@@ -17,7 +17,7 @@ export const BentoGridItem = ({ className, title, description, image }) => (
         <img
           src={image}
           alt={title || "Image"}
-          className="w-20 h-72 object-cover" // Adjust width and height
+          className="w-full h-72 object-cover" // Adjust width and height
         />
       )}
     </div>

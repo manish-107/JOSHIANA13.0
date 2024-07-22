@@ -11,13 +11,13 @@ const GoogleGeminiEffect = ({ pathLengths, title, description, className }) => {
   return (
     <div className={cn("sticky top-32 md:top-32", className)}>
       <p
-        style={{ fontFamily: "Abril Fatface" }}
+        style={{ fontFamily: "Satisfy" }}
         className="text-5xl md:text-7xl font-normal pb-4 pt-20 text-center bg-clip-text text-transparent bg-gradient-to-t from-[#57e4e4] to-[#2a37e7]"
       >
         {title || `JOSHIANA 13.0`}
       </p>
       <p
-        style={{ fontFamily: "Abril Fatface" }}
+        style={{ fontFamily: "Patua One" }}
         className="text-lg md:text-xl font-normal text-center text-[#ffffff] mt-4 p-3 max-w-lg mx-auto"
       >
         {description ||

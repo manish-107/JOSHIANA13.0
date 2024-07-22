@@ -1,11 +1,21 @@
 import React from "react";
 import Nav from "../components/Nav.jsx";
 import { ThreeDCardDemo } from "../components/ThreeDCardDemo.jsx";
+import Footer from "../components/Footer.jsx";
+import dance from "../assets/dance-min.jpg";
+import hackathon from "../assets/Hackathon-min.jpg";
+import productlunch from "../assets/productlunch-min.jpg";
+import quizid from "../assets/quizid-min.jpg";
+import treamenent from "../assets/reamenent-min.jpg";
+import supriseevent from "../assets/supriseevent-min.jpg";
+import TreasureHunt from "../assets/TreasureHunt-min.jpg";
+import itmanager from "../assets/itmanager-min.jpg";
+import vlogging from "../assets/vlogging-min.jpg";
+import webdev from "../assets/webdev-min.jpg";
 
 const eventCards = [
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: hackathon,
     category: "Hackathon",
     title: "Code Sprint",
     details: [
@@ -20,8 +30,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: itmanager,
     category: "IT Manager",
     title: "Tech Management",
     details: [
@@ -36,8 +45,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: quizid,
     category: "IT Quiz",
     title: "Tech Trivia",
     details: [
@@ -52,8 +60,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: webdev,
     category: "Web Designing",
     title: "Design Challenge",
     details: [
@@ -68,8 +75,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: productlunch,
     category: "Product Launch",
     title: "New Tech Unveiling",
     details: [
@@ -84,8 +90,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: TreasureHunt,
     category: "Treasure Hunt",
     title: "Hidden Treasures",
     details: [
@@ -100,8 +105,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: dance,
     category: "Dance",
     title: "Dance Fiesta",
     details: [
@@ -116,8 +120,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: supriseevent,
     category: "Surprise Event",
     title: "Mystery Event",
     details: [
@@ -132,8 +135,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: vlogging,
     category: "Vlogging",
     title: "Vlog Competition",
     details: [
@@ -148,8 +150,7 @@ const eventCards = [
     ],
   },
   {
-    imageSrc:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageSrc: treamenent,
     category: "Team Event",
     title: "Team Building Activities",
     details: [
@@ -188,6 +189,7 @@ const Events = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

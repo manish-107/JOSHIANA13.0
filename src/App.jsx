@@ -17,7 +17,7 @@ function App() {
     // Simulate loading of all resources
     const loadResources = async () => {
       // You can add real resource loading logic here
-      await new Promise((resolve) => setTimeout(resolve, 3000)); // Simulate a 3-second delay
+      await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate a 3-second delay
       setLoading(false);
     };
 

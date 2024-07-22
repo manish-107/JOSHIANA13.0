@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../components/ui/canvas-reveal-effect";
-import postimg from "../assets/imghead.jpg";
+import postimg from "../assets/imghead-min.jpg";
 import CardGrid from "./LandingCard";
 
 export default function CanvasRevealEffectDemo3() {

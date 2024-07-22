@@ -1,7 +1,9 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid.jsx"; // Adjust the path if needed
+import itmanager from "../assets/itmanager-min.jpg";
+import vlogging from "../assets/vlogging-min.jpg";
 
-// Data for different sections with dummy image URLs
+// Data for different sections with only two image sources
 const sections = [
   {
     title: "Faculty Coordinators",
@@ -9,17 +11,17 @@ const sections = [
       {
         title: "Ms Sumangala N",
         description: "HOD - MCA",
-        image: "images/team-1.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Mr Gururaja S",
         description: "Convener",
-        image: "images/team-3.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Mr Sathyendra Bhat J",
         description: "Co - Convener",
-        image: "images/team-4.jpg",
+        image: itmanager, // Randomly assigned image
       },
     ],
   },
@@ -29,12 +31,12 @@ const sections = [
       {
         title: "Nikhil B",
         description: "Student Coordinator (President)",
-        image: "images/nikhil.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Jeevitha Pai",
         description: "Student Coordinator",
-        image: "images/Jeevitha.JPG",
+        image: itmanager, // Randomly assigned image
       },
     ],
   },
@@ -44,12 +46,12 @@ const sections = [
       {
         title: "Deepak Boniface Cardoza",
         description: "Secretary",
-        image: "images/Deepak Boniface Cardoza-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Shreeshma",
         description: "Treasurer",
-        image: "images/Shreeshma-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
     ],
   },
@@ -59,32 +61,32 @@ const sections = [
       {
         title: "Mr Gururaja S",
         description: "Food, Transportation & Accommodation",
-        image: "images/team-3.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Mr Ragesh Raju",
         description: "Stage & Decoration",
-        image: "images/ragesh.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Ms Sadhana Kumble",
         description: "Registration & Certificates",
-        image: "images/sadana.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Ms Sumangala N",
         description: "Publicity & Sponsorship",
-        image: "images/team-1.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Dr Hareesh B",
         description: "Scores & Results",
-        image: "images/hareesh.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Mr Sunith Kumar T",
         description: "Website & Design",
-        image: "images/sunith.jpg",
+        image: itmanager, // Randomly assigned image
       },
     ],
   },
@@ -94,102 +96,102 @@ const sections = [
       {
         title: "Sarath",
         description: "CODEBLANCA",
-        image: "images/sarath-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Ankitha",
         description: "CODEBLANCA",
-        image: "images/ankitha1-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Yashaswi",
         description: "DORTWEB",
-        image: "images/Yashswi-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Shraddha",
         description: "DORTWEB",
-        image: "images/shraddha-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Manisha",
         description: "HARLEM SHAKE",
-        image: "images/manisha-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Preethi",
         description: "HARLEM SHAKE",
-        image: "images/preeti-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Nithin",
         description: "SEOUL",
-        image: "images/Nithin-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Akash",
         description: "SEOUL",
-        image: "images/1649077972336_Mr Akash.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Pratul",
         description: "L'OBJECTIF",
-        image: "images/pratul.jpeg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Sanath",
         description: "L'OBJECTIF",
-        image: "images/sanath final.png",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Sannidhi",
         description: "CAIRO CONFLICTS",
-        image: "images/sannidhi-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Harishree",
         description: "CAIRO CONFLICTS",
-        image: "images/harishri-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Varshitha",
         description: "IT PHARAOH",
-        image: "images/varshitha.jpeg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Mahima",
         description: "IT PHARAOH",
-        image: "images/mahima_itmanagaer-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Abhishek",
         description: "NUKETOWN",
-        image: "images/abhishek_gaming-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Nishan",
         description: "NUKETOWN",
-        image: "images/nishan_gaming-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Lia",
         description: "VLOG OF FAME",
-        image: "images/lia-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Suraksha",
         description: "VLOG OF FAME",
-        image: "images/suraksha-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Gowtham",
         description: "TAKESHI'S CASTLE",
-        image: "images/GOWTHAM G K-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Prajna",
         description: "TAKESHI'S CASTLE",
-        image: "images/Prajna-min.JPG",
+        image: itmanager, // Randomly assigned image
       },
     ],
   },
@@ -199,92 +201,92 @@ const sections = [
       {
         title: "Sarath",
         description: "CODEBLANCA",
-        image: "images/sarath-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Ankitha",
         description: "CODEBLANCA",
-        image: "images/ankitha1-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Yashaswi",
         description: "DORTWEB",
-        image: "images/Yashswi-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Shraddha",
         description: "DORTWEB",
-        image: "images/shraddha-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Manisha",
         description: "HARLEM SHAKE",
-        image: "images/manisha-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Preethi",
         description: "HARLEM SHAKE",
-        image: "images/preeti-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Nithin",
         description: "SEOUL",
-        image: "images/Nithin-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Akash",
         description: "SEOUL",
-        image: "images/1649077972336_Mr Akash.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Pratul",
         description: "L'OBJECTIF",
-        image: "images/pratul.jpeg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Sanath",
         description: "L'OBJECTIF",
-        image: "images/sanath final.png",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Sannidhi",
         description: "CAIRO CONFLICTS",
-        image: "images/sannidhi-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Harishree",
         description: "CAIRO CONFLICTS",
-        image: "images/harishri-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Varshitha",
         description: "IT PHARAOH",
-        image: "images/varshitha.jpeg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Mahima",
         description: "IT PHARAOH",
-        image: "images/mahima_itmanagaer-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Abhishek",
         description: "NUKETOWN",
-        image: "images/abhishek_gaming-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Nishan",
         description: "NUKETOWN",
-        image: "images/nishan_gaming-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Lia",
         description: "VLOG OF FAME",
-        image: "images/lia-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
       {
         title: "Suraksha",
         description: "VLOG OF FAME",
-        image: "images/suraksha-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
     ],
   },
@@ -294,12 +296,12 @@ const sections = [
       {
         title: "Deepak Boniface Cardoza",
         description: "Secretary",
-        image: "images/Deepak Boniface Cardoza-min.jpg",
+        image: vlogging, // Randomly assigned image
       },
       {
         title: "Shreeshma",
         description: "Treasurer",
-        image: "images/Shreeshma-min.jpg",
+        image: itmanager, // Randomly assigned image
       },
     ],
   },

@@ -4,7 +4,6 @@ import StarField from "../components/StarField.jsx";
 import Nav from "../components/Nav.jsx";
 import HeroSec from "../components/HeroSec.jsx";
 import GoogleGeminiEffectDemo from "../components/GoogleGeminiEffectDemo.jsx";
-import Marquee from "../components/Marquee.jsx";
 import Footer from "../components/Footer.jsx";
 function LandingPage() {
   return (
