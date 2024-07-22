@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../components/Nav.jsx";
 import GoogleGeminiEffectDemo from "../components/GoogleGeminiEffectDemo.jsx";
 
 const Contact = () => {
+  // State to manage the loading state of the map
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Function to handle when the map finishes loading
+  const handleMapLoad = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="bg-black min-h-screen text-gray-100">
       <Nav />
@@ -22,7 +30,25 @@ const Contact = () => {
 
             <div className="mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Map Section */}
-              <div className="overflow-hidden rounded-2xl border-neutral-700 bg-neutral-900 bg-opacity-95">
+              <div className="relative overflow-hidden rounded-2xl border-neutral-700 bg-neutral-900 bg-opacity-95">
+                {isLoading && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75">
+                    <svg
+                      className="w-12 h-12 text-gray-400 animate-spin"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 4v1m0 14v1m8-8h1M4 12H3m14.36-6.36l.7.7M4.64 17.36l.7-.7M18.36 17.36l.7-.7M5.64 5.64l.7.7"
+                      />
+                    </svg>
+                  </div>
+                )}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.9521174925303!2d74.89610237469192!3d12.910799087399024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba359dfac132663%3A0xa7bf228838232d32!2sSt%20Joseph%20Engineering%20College!5e0!3m2!1sen!2sus!4v1721550451603!5m2!1sen!2sus"
                   width="100%"
@@ -32,7 +58,8 @@ const Contact = () => {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Map"
-                ></iframe>
+                  onLoad={handleMapLoad} // Set loading to false when map loads
+                />
               </div>
 
               {/* Contact Details Section */}

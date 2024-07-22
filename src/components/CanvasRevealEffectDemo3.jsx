@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "../components/ui/canvas-reveal-effect";
 import postimg from "../assets/imghead.jpg";
@@ -6,16 +6,29 @@ import CardGrid from "./LandingCard";
 
 export default function CanvasRevealEffectDemo3() {
   const [hovered, setHovered] = React.useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
+  // Update the isDesktop state based on window width
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className=" p-5 border-8 border-black bg-black w-full gap-4 mx-auto px-8 rounded-3xl"
+      className="relative p-5 border-8 border-black bg-black w-full gap-4 mx-auto px-8 rounded-3xl"
     >
       {/* Animation Effect */}
       <AnimatePresence>
-        {hovered && (
+        {hovered && isDesktop && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -38,7 +51,7 @@ export default function CanvasRevealEffectDemo3() {
 
       {/* Content Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center">
-        <div className=" flex flex-col lg:flex-row w-full z-20  mt-10 m-5 md:m-32 md:mt-0 gap-4 pt-0 md:pt-32 lg:gap-8">
+        <div className="flex flex-col lg:flex-row w-full z-20 mt-10 m-5 md:m-32 md:mt-0 gap-4 pt-0 md:pt-32 lg:gap-8">
           {/* Image Section */}
           <div
             className="flex justify-center items-center wow fadeIn"
@@ -91,10 +104,13 @@ export default function CanvasRevealEffectDemo3() {
           </div>
         </div>
       </div>
-      {/* Card Grid Section */}
 
+      {/* Card Grid Section */}
       <div className="absolute inset-0 rounded-xl [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
       <div className="relative flex flex-col items-center w-full z-20 mt-10 mb-5 md:mb-32">
+        <h2 className="text-3xl md:text-5xl text-center font-bold text-white z-50 pb-16">
+          Events
+        </h2>
         <CardGrid />
       </div>
     </div>
