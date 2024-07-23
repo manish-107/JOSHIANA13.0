@@ -1,5 +1,6 @@
 import { cn } from "../../utils/cn.js";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import React from "react";
 
 const transition = {
@@ -24,9 +25,12 @@ const GoogleGeminiEffect = ({ pathLengths, title, description, className }) => {
           `Joshiana 13.0 is a National level IT fest organized by the Department of Computer Applications in association with TECHNOCRATS`}
       </p>
       <div className="w-full h-[890px] -top-32 md:-top-36  flex items-center justify-center bg-red-transparent absolute ">
-        <button className="font-bold bg-[#ffffff] rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
+        <Link
+          to="/register"
+          className="font-bold bg-[#ffffff] rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto"
+        >
           Register Now
-        </button>
+        </Link>
       </div>
       <svg
         width="1440"
