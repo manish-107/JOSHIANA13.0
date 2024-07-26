@@ -1,10 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import itmanager from "../assets/itmanager-min.jpg";
 import vlogging from "../assets/vlogging-min.jpg";
 import webdev from "../assets/webdev-min.jpg";
 
-// Define variants for card animations
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (index) => ({
@@ -17,27 +16,19 @@ const cardVariants = {
   }),
 };
 
-const Card = ({
-  color,
-  title,
-  team,
-  timeLeft,
-  progress,
-  members,
-  icon,
-  index,
-}) => {
+const Card = ({ color, title, team, timeLeft, members, icon, index }) => {
   const controls = useAnimation();
   const ref = useRef(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      if (!ref.current) return;
       const { top, bottom } = ref.current.getBoundingClientRect();
       const isInView = top < window.innerHeight && bottom >= 0;
-      if (isInView) {
+      if (isInView && !hasAnimated) {
         controls.start("visible");
-      } else {
-        controls.start("hidden");
+        setHasAnimated(true); // Set to true to prevent further animations
       }
     };
 
@@ -45,7 +36,7 @@ const Card = ({
     handleScroll(); // Initial check
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
+  }, [controls, hasAnimated]);
 
   return (
     <motion.div
@@ -114,9 +105,9 @@ const Card = ({
           <div className="my-2">
             <p className="font-semibold text-base mb-2">Team Member</p>
             <div className="flex space-x-2">
-              {members.map((member, index) => (
+              {members.map((member, idx) => (
                 <img
-                  key={index}
+                  key={idx}
                   src={member}
                   className="w-6 h-6 rounded-full"
                   alt="Team Member"
@@ -129,7 +120,6 @@ const Card = ({
     </motion.div>
   );
 };
-
 const CardGrid = () => {
   return (
     <motion.div
@@ -239,7 +229,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={2}
+          index={3}
         />
         <Card
           color="bg-sky-500"
@@ -263,7 +253,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={2}
+          index={4}
         />
         <Card
           color="bg-pink-500"
@@ -287,7 +277,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={2}
+          index={5}
         />
         <Card
           color="bg-blue-500"
@@ -311,7 +301,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={2}
+          index={6}
         />
         <Card
           color="bg-green-500"
@@ -335,7 +325,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={2}
+          index={7}
         />
         <Card
           color="bg-yellow-500"
@@ -359,7 +349,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={2}
+          index={8}
         />
         <Card
           color="bg-red-500"
@@ -387,7 +377,7 @@ const CardGrid = () => {
               />
             </svg>
           }
-          index={3}
+          index={9}
         />
       </div>
     </motion.div>
