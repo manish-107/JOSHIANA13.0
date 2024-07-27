@@ -19,7 +19,7 @@ This is the backend API for JOSHIANA13.0, a system to manage event registrations
 1. Clone the repository:
    ```sh
    git clone https://github.com/manish-107/JOSHIANA13.0.git
-   cd backend
+   cd joshiana13-0/frontend
    ```
 ````
 
